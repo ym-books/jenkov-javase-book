@@ -4,3 +4,12 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Java SE 教程"
+
+[output.html.fold]
+enable = true #展开或收缩菜单标签
+
+#[output.html]
+#git-repository-url = "https://github.com/rust-lang/rust-by-example"
+
+[rust]
+edition = "2021"
