@@ -162,6 +162,46 @@ list.add(0, "element 4");
 ```
 插入元素对象到索引`0`的位置，其它元素下推。
 
+<a id="jump8"/>
+
+## 将一个List中的所有元素插入到另一个List中
+
+可以将一个`Java List`中的所有元素添加到另一个`List`中。您可以使用`List addAll()`方法来做到这一点。结果`List`是两个列表的并集。下面是一个将一个`List`中的所有元素添加到另一个List中的例子:
+```java
+List<String> listSource = new ArrayList<>();
+
+listSource.add("123");
+listSource.add("456");
+
+List<String> listDest   = new ArrayList<>();
+
+listDest.addAll(listSource);
+```
+
+上面例子，把第一个列表的所有元素插入到第二个列表中。
+
+`addAll()`方法接受`Collection`作为参数，因此可以传递`List`或`Java Set`作为参数。换句话说，您可以使用`addAll()`将`List`或`Set`中的所有元素添加到`List`中。
+
+<a id="jump9"/>
+
+## 从List中获取元素
+
+您可以使用元素的索引从`Java List`中获取元素。你可以使用`get(int index)`方法来做到这一点。下面是一个使用元素索引访问`Java List`元素的例子:
+```java
+List<String> listA = new ArrayList<>();
+
+listA.add("element 0");
+listA.add("element 1");
+listA.add("element 2");
+
+//access via index
+String element0 = listA.get(0);
+String element1 = listA.get(1);
+String element3 = listA.get(2);
+```
+
+还可以按照`Java List`元素在内部的存储顺序迭代它们。我将在本Java List教程的后面向您展示如何做到这一点。
+
 
 
 
