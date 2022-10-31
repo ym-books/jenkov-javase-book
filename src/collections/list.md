@@ -10,7 +10,7 @@
 >- [将一个List中的所有元素插入到另一个List中](#jump8)
 >- [从List中获取元素](#jump9)
 >- [在List中查找元素](#jump10)
->- [查找List中元素的最后一次出现](#jump11)
+>   - [查找List中元素的最后一次出现](#jump11)
 >- [判断List中是否包含某个元素](#jump12)
 >- [从List中移除元素](#jump13)
 >- [删除List中所有的元素](#jump14)
@@ -201,6 +201,138 @@ String element3 = listA.get(2);
 ```
 
 还可以按照`Java List`元素在内部的存储顺序迭代它们。我将在本Java List教程的后面向您展示如何做到这一点。
+
+<a id="jump10"/>
+
+## 在List中查找元素
+
+您可以通过下面方法在`List`中查找元素：
+ - `indexOf()`
+ - `lastIndexOf()`
+
+`indexOf()`方法查找给定元素在`List`中第一个出现项的索引。下面是一个在`Java List`中查找两个元素索引的例子:
+```java
+List<String> list = new ArrayList<>();
+
+String element1 = "element 1";
+String element2 = "element 2";
+
+list.add(element1);
+list.add(element2);
+
+int index1 = list.indexOf(element1);
+int index2 = list.indexOf(element2);
+
+System.out.println("index1 = " + index1);
+System.out.println("index2 = " + index2);
+```
+执行输出：
+````java
+index1 = 0
+index2 = 1
+````
+
+<a id="jump11"/>
+
+#### 查找List中元素的最后一次出现
+
+`lastIndexOf()`方法查找元素在`List`中最后一次出现的位置。下面是示例：
+```java
+List<String> list = new ArrayList<>();
+
+String element1 = "element 1";
+String element2 = "element 2";
+
+list.add(element1);
+list.add(element2);
+list.add(element1);
+
+int lastIndex = list.lastIndexOf(element1);
+System.out.println("lastIndex = " + lastIndex);
+```
+代码片段输出：
+```java
+lastIndex = 2
+```
+
+<a id="jump12"/>
+
+## 判断List中是否包含某个元
+
+
+<a id="jump13"/>
+
+## 从List中移除元素
+
+
+<a id="jump14"/>
+
+## 删除List中所有的元素
+
+<a id="jump15"/>
+
+## 将一个List中的所有元素保留到另一个List中
+
+<a id="jump16"/>
+
+## List的大小
+
+<a id="jump17"/>
+
+## List截取子List
+
+<a id="jump18"/>
+
+## 将List转换为Set
+
+<a id="jump19"/>
+
+## 将List转换成Array
+
+<a id="jump20"/>
+
+## 转换Array为List
+
+<a id="jump21"/>
+
+## List排序
+
+<a id="jump22"/>
+
+#### 排序List元素对象
+
+<a id="jump23"/>
+
+#### 用Comparator排序List
+
+<a id="jump24"/>
+
+## 迭代List
+
+<a id="jump25"/>
+
+## 使用Iterator迭代List
+
+<a id="jump26"/>
+
+#### 使用For-Each迭代List
+
+<a id="jump27"/>
+
+#### 使用普通Fori迭代List
+
+<a id="jump28"/>
+
+#### 使用普通Fori迭代List
+
+<a id="jump29"/>
+
+#### 使用`Java Stream API`迭代操作List
+
+<a id="jump30"/>
+
+## 查看JavaDoc了解更多List详情
+
 
 
 
