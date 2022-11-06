@@ -24,7 +24,7 @@
   - [Java Comparable](collections/comparable.md)
   - [Java Comparator比较器](collections/comparator.md)
   - [Java集合和流操作](collections/collections_stream.md)
-- [Java并发和多线程](concurrency/index.md)
+- [Java高并发和多线程](concurrency/index.md)
   - [多线程的好处](concurrency/benefits.md)
   - [多线程的成本](concurrency/costs.md)
   - [并发模型](concurrency/concurrency_models.md)
